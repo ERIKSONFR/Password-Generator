@@ -7,8 +7,8 @@ let characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P
 // let numeroE = ''
 
 generateBtn.addEventListener('click', function() {
-    leftText.textContent = ""
-    leftText.textContent += randomPasswordGenerator()
+    results.textContent = ""
+    results.textContent += randomPasswordGenerator()
 
 })
 
@@ -22,12 +22,3 @@ function randomPasswordGenerator() {
     }
     return newPass
 }
-
-copyClip.addEventListener('click', function() {
-    Text.select();
-    navigator.clipboard.writeText(Text.value);
-    copyClip.innerHTML = results.value;
-})
-
-
-// 14 letras
